@@ -81,6 +81,9 @@ namespace cs_tutorial_1 // namespace is a container for classes and other namesp
             // 
             // Abstract method -> can only be used in an abstract class, and it does not 
             // have a body. The body is provided by the derived class (inherited from).
+            Pig2 myPig2 = new Pig2();
+            myPig2.animalSound(); // Call the abstract method
+            myPig2.sleep(); // Call the regular method
         }
     }
 }
