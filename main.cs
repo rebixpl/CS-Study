@@ -64,6 +64,23 @@ namespace cs_tutorial_1 // namespace is a container for classes and other namesp
 
             // Display the value of the brand field (from the Vehicle class) and the value of the modelName from the Car7 class
             Console.WriteLine(car7.brand + " " + car7.modelName);
+            Console.WriteLine();
+
+            //--------------- C# Polymorphism ------------------------------
+            Animal myAnimal = new Animal(); // Create animal object
+            Animal myPig = new Pig(); // create pig  object
+            Animal myDog = new Dog(); // create dog object
+
+            myAnimal.animalSound(); 
+            myPig.animalSound(); 
+            myDog.animalSound();
+
+            //----------------- C# Abstraction ----------------------------- 
+            // Abstract class -> is a restricted class that cannot be used to create 
+            // objects (to access it, it must be inherited from another class).
+            // 
+            // Abstract method -> can only be used in an abstract class, and it does not 
+            // have a body. The body is provided by the derived class (inherited from).
         }
     }
 }
