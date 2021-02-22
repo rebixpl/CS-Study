@@ -56,6 +56,14 @@ namespace cs_tutorial_1 // namespace is a container for classes and other namesp
             myPerson.Name = "Mariusz";
             Console.WriteLine(myPerson.Name); // OUTPUT: Mariuszov
 
+            //---------------- C# Inheritance ---------------------------
+            Car7 car7 = new Car7();
+
+            // Call the honk() method (From the Vehicle class) on the car7 object
+            car7.honk();
+
+            // Display the value of the brand field (from the Vehicle class) and the value of the modelName from the Car7 class
+            Console.WriteLine(car7.brand + " " + car7.modelName);
         }
     }
 }
